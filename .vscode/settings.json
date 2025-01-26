@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "forcabruta.h": "c",
+        "stdlib.h": "c"
+    }
+}
