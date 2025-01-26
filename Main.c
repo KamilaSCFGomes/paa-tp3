@@ -4,6 +4,8 @@
 
 #include "EntradaESaida.h"
 #include "ForcaBruta.h"
+#include "KMP.h"
+#include "Musica.h"
 
 
 int main(int argc, char *argv[]) {
@@ -41,7 +43,7 @@ int main(int argc, char *argv[]) {
                 resultado = forcaBruta(musica, possivelPlagio); // Força Bruta
                 break;
             case 2:
-                // a fazer
+                resultado = KMP(musica, possivelPlagio); // Força Bruta
                 break;
             case 3:
                 // a fazer

@@ -10,6 +10,7 @@
 
 #include "EntradaESaida.h"
 #include "ForcaBruta.h"
+#include "Musica.h"
 
 
 void imprimeRelogio(struct timeval comeco, struct timeval fim, struct rusage usoCPU) { // Para análise de complexidade
