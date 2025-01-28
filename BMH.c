@@ -3,6 +3,8 @@
 #include "BMH.h"
 #include "Musica.h"
 
+
+// Complexidade (12) + (tam trecho - 1) + ((tam musica) * (tam trecho) + 1) = O(m*t)
 int BMH(Musica *musica, Musica *possivelPlagio) {
     int *v = (int*) malloc (12 *sizeof(int)); // 12 porque são 12 notas diferentes
     

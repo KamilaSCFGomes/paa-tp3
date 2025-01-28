@@ -4,6 +4,7 @@
 #include "Musica.h"
 
 
+// Complexidade (tam trecho) * (3)
 void determinaPrefixo(Musica *possivePlagio, int v[]) { // Prefixos evitarão a busca repetida
     int tam = 0;
     v[0] = 0;
@@ -26,6 +27,7 @@ void determinaPrefixo(Musica *possivePlagio, int v[]) { // Prefixos evitarão a 
 
 }
 
+// Complexidade (complexidade de determinaPrefixo()) + (tam musica) * 5
 int KMP(Musica *musica, Musica *possivelPlagio) {
     int *v = (int*) malloc (possivelPlagio->tam * sizeof(int)); // Prefixos evitarão a busca repetida
 
