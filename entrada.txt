@@ -10,4 +10,7 @@ C D
 4 3
 C E G Bb
 D F# A
+10 2
+A B C C C C C C D B
+D B
 0 0

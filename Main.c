@@ -19,8 +19,10 @@ int main(int argc, char *argv[]) {
     int numeroDoAlgoritmo = atoi(argv[2]); // Valor inserido na execução do programa (1 a 4)
 
     FILE *entrada = fopen(nomeDaEntrada, "r");
-    if(argc != 3 || entrada == NULL) {
+    if(argc != 3 || entrada == NULL || numeroDoAlgoritmo < 1 || numeroDoAlgoritmo > 4) {
         imprimeErro("Argumentos com formatação incorreta");
+        if(entrada != NULL)
+            fclose(entrada);
         return 0;
     }
     FILE *saida = fopen("saida.txt", "w");
@@ -44,17 +46,14 @@ int main(int argc, char *argv[]) {
                 resultado = forcaBruta(musica, possivelPlagio); // Força Bruta
                 break;
             case 2:
-                resultado = KMP(musica, possivelPlagio); // Força Bruta
+                resultado = KMP(musica, possivelPlagio); // KMP
                 break;
             case 3:
-                resultado = BMH(musica, possivelPlagio);
+                resultado = BMH(musica, possivelPlagio); // BMH
                 break;
             case 4:
-                // a fazer
+                // Shift And a fazer
                 break;
-            default:
-                imprimeErro("Opção de algoritmo inválida (deve ser de 1 a 4)");
-                return 0;
         }
 
         geraSaida(saida, resultado); // Impressão no arquivo e no terminal
