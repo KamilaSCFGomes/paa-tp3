@@ -12,6 +12,22 @@
 #include "ForcaBruta.h"
 #include "Musica.h"
 
+#define nomeArquivoTempo "tempo/fb/fb10_2.txt"
+
+
+void imprimeErro(char *texto) { // Padroniza impressão e facilita debugging
+    printf("ERRO! %s\n", texto);
+}
+
+void imprimeArquivoTempo(double tempo) {
+    FILE *arquivo = fopen(nomeArquivoTempo, "a"); // Append
+    if(arquivo == NULL) {
+        imprimeErro("Não foi possível abrir o arquivo de tempo");
+        return;
+    }
+    fprintf(arquivo, "%lf, ", tempo);
+    fclose(arquivo);
+}
 
 void imprimeRelogio(struct timeval comeco, struct timeval fim, struct rusage usoCPU) { // Para análise de complexidade
     getrusage(RUSAGE_SELF, &usoCPU);
@@ -24,15 +40,11 @@ void imprimeRelogio(struct timeval comeco, struct timeval fim, struct rusage uso
     double tempoDeExecucao = ((fim.tv_sec - comeco.tv_sec) * 1000) +
                              ((double)(fim.tv_usec - comeco.tv_usec)) / 1000;//em ms
     
-    printf("\nAnálise de tempo:\n");
+    printf("Análise de tempo:\n");
     printf("Tempo de Execução: %.6lf ms\n",tempoDeExecucao);
     printf("Tempo de CPU:      %.6lf ms\n",tempoDeCPU);
-    printf("Programa finalizado\n");
+    imprimeArquivoTempo(tempoDeCPU);
     return;
-}
-
-void imprimeErro(char *texto) { // Padroniza impressão e facilita debugging
-    printf("ERRO! %s\n", texto);
 }
 
 int notaParaInteiro(char nota[]) { // Retorna um valor padronizado em inteiro
@@ -122,10 +134,10 @@ int leMusicas(FILE *arquivoMusicas, Musica *musica, Musica *possivelPlagio) { //
 
 void geraSaida(FILE *saida, int resultado) { // Impressão no arquivo e no terminal
     if(resultado < 0) { // N = Não há plágio
-        printf("N\n");
+        printf("N\n\n");
         fprintf(saida, "N\n");
     } else {
-        printf("S %d\n", resultado);
+        printf("S %d\n\n", resultado);
         fprintf(saida, "S %d\n", resultado); // S = Há plágio
     }
 }

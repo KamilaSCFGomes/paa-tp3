@@ -13,7 +13,6 @@ int main(int argc, char *argv[]) {
 
     struct timeval comeco, fim;
     struct rusage usoCPU;
-    gettimeofday(&comeco, NULL);
 
     char *nomeDaEntrada = argv[1]; // Nome de arquivo inserido na execução do programa
     int numeroDoAlgoritmo = atoi(argv[2]); // Valor inserido na execução do programa (1 a 4)
@@ -43,13 +42,19 @@ int main(int argc, char *argv[]) {
         int resultado = -1;
         switch(numeroDoAlgoritmo) { // Valor inserido na execução do programa (1 a 4)
             case 1:
+                gettimeofday(&comeco, NULL);
                 resultado = forcaBruta(musica, possivelPlagio); // Força Bruta
+                imprimeRelogio(comeco, fim, usoCPU); // Para análise de complexidade
                 break;
             case 2:
+                gettimeofday(&comeco, NULL);
                 resultado = KMP(musica, possivelPlagio); // KMP
+                imprimeRelogio(comeco, fim, usoCPU); // Para análise de complexidade
                 break;
             case 3:
+                gettimeofday(&comeco, NULL);
                 resultado = BMH(musica, possivelPlagio); // BMH
+                imprimeRelogio(comeco, fim, usoCPU); // Para análise de complexidade
                 break;
             case 4:
                 // Shift And a fazer
@@ -65,6 +70,5 @@ int main(int argc, char *argv[]) {
 
     fclose(entrada);
     fclose(saida);
-    imprimeRelogio(comeco, fim, usoCPU); // Para análise de complexidade
     return 0;
 }

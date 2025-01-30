@@ -22,11 +22,11 @@ Musica.o: Musica.c Musica.h
 
 valgrind: tp3
 	clear
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./tp3 entrada.txt 3
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./tp3 entradas/entrada10_10.txt 1
 
 fb: tp3
 	clear
-	./tp3 entrada.txt 1
+	./tp3 entradas/entrada10_2.txt 1
 
 kmp: tp3
 	clear

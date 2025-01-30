@@ -1,0 +1,301 @@
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+10 2
+A A A A A A A A A A 
+A B
+0 0
