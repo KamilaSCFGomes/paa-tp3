@@ -12,15 +12,15 @@
 #include "ForcaBruta.h"
 #include "Musica.h"
 
-#define nomeArquivoTempo "tempo/fb/fb10_2.txt"
-
+#define nomeArquivoTempo "tempo/fb/fb2_2.txt" // No caso de desejar salvar os tempos de execução (tempo salvo a partir da iteração atual)
+// Basta descomentar a linha 46
 
 void imprimeErro(char *texto) { // Padroniza impressão e facilita debugging
     printf("ERRO! %s\n", texto);
 }
 
-void imprimeArquivoTempo(double tempo) {
-    FILE *arquivo = fopen(nomeArquivoTempo, "a"); // Append
+void imprimeArquivoTempo(double tempo) { // No caso de desejar salvar os tempos de execução
+    FILE *arquivo = fopen(nomeArquivoTempo, "a");
     if(arquivo == NULL) {
         imprimeErro("Não foi possível abrir o arquivo de tempo");
         return;
@@ -43,7 +43,8 @@ void imprimeRelogio(struct timeval comeco, struct timeval fim, struct rusage uso
     printf("Análise de tempo:\n");
     printf("Tempo de Execução: %.6lf ms\n",tempoDeExecucao);
     printf("Tempo de CPU:      %.6lf ms\n",tempoDeCPU);
-    imprimeArquivoTempo(tempoDeCPU);
+    // imprimeArquivoTempo(tempoDeCPU);
+    // No caso de desejar salvar os tempos de execução
     return;
 }
 
@@ -59,7 +60,7 @@ int notaParaInteiro(char nota[]) { // Retorna um valor padronizado em inteiro
     if(strcmp(nota, "F") == 0 || strcmp(nota, "E#") == 0) return 9;
     if(strcmp(nota, "F#") == 0 || strcmp(nota, "Gb") == 0) return 10;
     if(strcmp(nota, "G") == 0) return 11;
-    // if(strcmp(nota, "G#") == 0 || strcmp(nota, "Ab") == 0) Verificação irrelevante
+    // Verificação para G# e Ab irrelevante
     return 12;
 }
 
