@@ -27,7 +27,7 @@ void determinaPrefixo(Musica *possivePlagio, int v[]) { // Prefixos evitarão a 
 
 }
 
-// Complexidade (complexidade de determinaPrefixo()) + (tam musica) * 5
+// Complexidade (complexidade de determinaPrefixo()) + (tam musica) * 5 = O(m + t)
 int KMP(Musica *musica, Musica *possivelPlagio) {
     int *v = (int*) malloc (possivelPlagio->tam * sizeof(int)); // Prefixos evitarão a busca repetida
 

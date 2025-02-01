@@ -12,7 +12,7 @@
 #include "ForcaBruta.h"
 #include "Musica.h"
 
-#define nomeArquivoTempo "tempo/fb/fb2_2.txt" // No caso de desejar salvar os tempos de execução (tempo salvo a partir da iteração atual)
+#define nomeArquivoTempo "exemplo.txt" // No caso de desejar salvar os tempos de execução (tempo salvo a partir da iteração atual)
 // Basta descomentar a linha 46
 
 void imprimeErro(char *texto) { // Padroniza impressão e facilita debugging
@@ -25,7 +25,8 @@ void imprimeArquivoTempo(double tempo) { // No caso de desejar salvar os tempos 
         imprimeErro("Não foi possível abrir o arquivo de tempo");
         return;
     }
-    fprintf(arquivo, "%lf, ", tempo);
+    if(tempo > 0.0001) 
+        fprintf(arquivo, "%lf, ", tempo);
     fclose(arquivo);
 }
 
@@ -65,7 +66,7 @@ int notaParaInteiro(char nota[]) { // Retorna um valor padronizado em inteiro
 }
 
 int leMusicas(FILE *arquivoMusicas, Musica *musica, Musica *possivelPlagio) { // Leitura do arquivo
-    int tamanhoMaxLinha = 300;
+    int tamanhoMaxLinha = 1000000000;
     char *linhaLida = (char*) malloc (sizeof(char) * tamanhoMaxLinha);
 
     fgets(linhaLida, tamanhoMaxLinha, arquivoMusicas);

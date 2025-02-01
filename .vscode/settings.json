@@ -5,6 +5,7 @@
         "musica.h": "c",
         "bmh.h": "c",
         "kmp.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "random": "c"
     }
 }
