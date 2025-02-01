@@ -6,6 +6,7 @@
 #include "ForcaBruta.h"
 #include "KMP.h"
 #include "BMH.h"
+#include "ShiftAnd.h"
 #include "Musica.h"
 
 
@@ -57,7 +58,9 @@ int main(int argc, char *argv[]) {
                 imprimeRelogio(comeco, fim, usoCPU); // Para análise de complexidade
                 break;
             case 4:
-                // Shift And a fazer
+                gettimeofday(&comeco, NULL);
+                resultado = ShiftAnd(musica, possivelPlagio); // ShiftAnd
+                imprimeRelogio(comeco, fim, usoCPU); // Para análise de complexidade
                 break;
         }
 
